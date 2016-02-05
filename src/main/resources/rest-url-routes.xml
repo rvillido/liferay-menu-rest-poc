@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<routes>
+    <route>
+        <pattern>/menu</pattern>
+        <implicit-parameter name="p_p_resource_id">menu</implicit-parameter>
+        <!-- Resource request lifecycle is 2 -->
+        <implicit-parameter name="p_p_lifecycle">2</implicit-parameter>
+    </route>
+
+</routes>

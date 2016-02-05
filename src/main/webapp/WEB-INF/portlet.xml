@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+
+<portlet-app xmlns="http://java.sun.com/xml/ns/portlet/portlet-app_2_0.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/portlet/portlet-app_2_0.xsd http://java.sun.com/xml/ns/portlet/portlet-app_2_0.xsd" version="2.0">
+    <portlet>
+        <portlet-name>menu-poc-portlet-portlet</portlet-name>
+        <display-name>Liferay POC portlet</display-name>
+        <portlet-class>org.springframework.web.portlet.DispatcherPortlet</portlet-class>
+        <init-param>
+            <name>contextConfigLocation</name>
+            <value>/WEB-INF/spring/portletContext.xml</value>
+        </init-param>
+        <init-param>
+            <!-- For Friendly URLs with Action render phase -->
+            <name>check-auth-token</name>
+            <value>false</value>
+        </init-param>
+        <expiration-cache>0</expiration-cache>
+        <supports>
+            <mime-type>text/html</mime-type>
+            <portlet-mode>VIEW</portlet-mode>
+        </supports>
+        <portlet-info>
+            <title>Liferay POC portlet</title>
+            <short-title>Liferay POC portlet</short-title>
+            <keywords>liferay poc portlet</keywords>
+        </portlet-info>
+    </portlet>
+</portlet-app>
